@@ -2465,17 +2465,10 @@ function loadTabs() {
         }
 
         function addTab(title, content = '', id = null) {
-    const defaultText = `--[[
-    Made by Holo.cc
-    Thank you for using Holo.cc
-    
-    https://discord.gg/DqWMtHZhjy
-]]`;    
+    const defaultText = "--[[\n    Made by Holo.cc\n    Thank you for using Holo.cc. Please join our discord server. https://discord.gg/DqWMtHZhjy\n ]]";    
     if (!content) {
         content = defaultText;
     }
-}
-
     
     const tab = new Tab(title, content);
     if (id) tab.id = id;
