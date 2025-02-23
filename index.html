@@ -2529,6 +2529,7 @@ function switchTab(tabId) {
         }
         
         const contentToSet = tab.content.trim() === '' ? "--[[ Made by Noahvvv\n    https://discord.gg/DqWMtHZhjy\n ]]" : tab.content;        editor.setValue(contentToSet);
+	const contentToSet = tab.content.trim() === '' ? "--[[ Thank you for using holo.cc.\n ]]" : tab.content;        editor.setValue(contentToSet);
         tab.element.classList.add('active');
         currentTab = tabId;
     }
